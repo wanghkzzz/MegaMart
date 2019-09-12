@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.benben.megamart"
+    android:versionCode="5"
+    android:versionName="1.0.5" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- 定位权限 -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature android:name="android.hardware.Camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:name="com.benben.megamart.MegaMartApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="1"
+        android:debuggable="true"
+        android:icon="@mipmap/icon_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.benben.megamart.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.benben.megamart.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.RegisterActivity"
+            android:label="@string/app_name"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.RetrievePasswordAvtivity"
+            android:label="@string/app_name"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.LocationActivity"
+            android:label="@string/app_name"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.MessageListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.HomeGoodsListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.HomeBlockGoodsListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.MessageNoticListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.SearchGoodsListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.CommonWebViewActivity"
+            android:label="@string/app_name"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.DiscountGoodsListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.GuideActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.SearchGoodsRecordActivity"
+            android:label="@string/app_name"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.SubmitOrderActivity"
+            android:label="@string/app_name"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.PaymentResultActivity"
+            android:label="@string/app_name"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.benben.megamart.ui.GoodsDetailsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+
+        <!-- ///////////////////个人中心\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 设置 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.UpdatePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 修改密码 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.SelectLanguageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 选择语言 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.PersonDataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 查看个人信息 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.PersonEditorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 编辑个人资料 -->
+
+        <activity
+            android:name="com.benben.megamart.ui.mine.BindingPhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 更换绑定手机号前的展示界面 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.UpdatePhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 更改手机号 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.BindingEmailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 更换绑定邮箱前的展示界面 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.UpdateEmailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 更改邮箱 -->
+
+        <activity
+            android:name="com.benben.megamart.ui.mine.MyWalletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 我的钱包 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.RechargeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 充值界面 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.MyAccountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 账户明细 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.MyInvitationCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 我的邀请 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.MyCouponActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 我的优惠券 -->
+
+        <activity
+            android:name="com.benben.megamart.ui.mine.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 意见反馈 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.OrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 我的订单 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 订单详情 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.ApplySaleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 申请售后 -->
+
+        <activity
+            android:name="com.benben.megamart.ui.mine.AddressManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 地址管理列表 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.AddAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 新增地址 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.MyCollectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 我的收藏 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.BindEmailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 绑定新邮箱 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.BindPhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 绑定新手机号 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.SelectAreaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 选择地区和州 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.ReceiverCouponActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 领取优惠券 -->
+        <activity
+            android:name="com.benben.megamart.ui.mine.ConnectionMineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!-- 联系我们 -->
+
+
+        <!-- 微信支付的回调 -->
+        <activity
+            android:name="com.benben.megamart.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxb44daab170bd4feb" />
+            </intent-filter>
+        </activity>
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+        <!-- 友盟分享 -->
+        <activity
+            android:name="com.benben.megamart.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101575657" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.luck.picture.lib.ui.PictureAlbumDirectoryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.Slider" />
+        <activity
+            android:name="com.luck.picture.lib.ui.PictureImageGridActivity"
+            android:theme="@style/Theme.Slider" />
+        <activity
+            android:name="com.luck.picture.lib.ui.PicturePreviewActivity"
+            android:theme="@style/Theme.Slider" />
+        <activity
+            android:name="com.luck.picture.lib.ui.PictureVideoPlayActivity"
+            android:theme="@style/Theme.Slider" />
+        <activity
+            android:name="com.luck.picture.lib.ui.PictureExternalPreviewActivity"
+            android:theme="@style/Theme.Slider" />
+        <activity
+            android:name="com.yalantis.ucrop.ui.PictureMultiCuttingActivity"
+            android:theme="@style/Theme.Slider" />
+        <activity
+            android:name="com.yalantis.ucrop.ui.PictureSingeUCropActivity"
+            android:theme="@style/Theme.Slider" />
+        <activity
+            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+            android:theme="@style/StripeDefaultTheme"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.stripe.android.view.PaymentMethodsActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.PaymentFlowActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.PaymentRelayActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.hyphenate.helpdesk.easeui.ui.ShowBigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.hyphenate.helpdesk.easeui.ui.ShowNormalFileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.hyphenate.helpdesk.easeui.ui.ShowVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.hyphenate.helpdesk.easeui.ui.BaseChatActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" /> <!-- choose video -->
+        <activity
+            android:name="com.hyphenate.helpdesk.easeui.ui.ImageGridActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hyphenate.helpdesk.easeui.ui.RecorderVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- 声明sdk所需的service -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.hyphenate.helpdesk.easeui.util.EaseFileProvider"
+            android:authorities="com.benben.megamart.ease"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_ease_paths" />
+        </provider> <!-- 语音通话 -->
+        <activity
+            android:name="com.hyphenate.helper.ui.VoiceCallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentTheme" /> <!-- 语音通话 -->
+        <activity
+            android:name="com.hyphenate.helper.ui.ChatActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentTheme" />
+        <activity
+            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+            android:theme="@style/Theme.Default" />
+        <activity
+            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressDialogActivity"
+            android:theme="@style/Theme.Default" />
+        <activity
+            android:name="com.lljjcoder.style.citylist.CityListSelectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateUnchanged" >
+        </activity>
+        <activity
+            android:name="com.lljjcoder.style.citythreelist.ProvinceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateUnchanged" >
+        </activity>
+        <activity
+            android:name="com.lljjcoder.style.citythreelist.CityActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateUnchanged" >
+        </activity>
+        <activity
+            android:name="com.lljjcoder.style.citythreelist.AreaActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateUnchanged" >
+        </activity>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.zjn.updateapputils.util.UpdateAppReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

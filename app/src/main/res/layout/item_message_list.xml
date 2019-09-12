@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.benben.commoncore.widget.badgeview.BGABadgeRelativeLayout
+        android:id="@+id/rlyt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingTop="15dp"
+        android:paddingRight="12dp"
+        app:badge_verticalMargin="20dp"
+        app:badge_horizontalMargin="12dp"
+        android:paddingBottom="15dp">
+
+        <ImageView
+            android:id="@+id/iv_message_avatar"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_placeholder" />
+
+        <TextView
+            android:id="@+id/tv_message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_message_avatar"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="16dp"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_message_title"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/iv_message_avatar"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="16dp"
+            android:text=""
+            android:textColor="@color/color_666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="16dp"
+            android:text=""
+            android:textColor="@color/color_999999"
+            android:textSize="12sp" />
+    </com.benben.commoncore.widget.badgeview.BGABadgeRelativeLayout>
+
+
+    <View
+        android:layout_below="@id/rlyt_content"
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:background="@color/color_EEEEEE" />
+</RelativeLayout>

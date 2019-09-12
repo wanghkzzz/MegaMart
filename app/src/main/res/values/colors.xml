@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EC5413</color>
+    <color name="colorPrimaryDark">#EC5413</color>
+    <color name="colorAccent">#EC5413</color>
+    <color name="color_transparent">@android:color/transparent</color>
+
+    <!--主题色-->
+    <color name="theme">#EC5413</color>
+    <!--背景色-->
+    <color name="bg_color">#F5F5F5</color>
+    <!--下划线颜色-->
+    <color name="view_line">#E6E6E6</color>
+
+
+    <!--首页-->
+    <color name="color_EC5413">#EC5413</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_EC4113">#EC4113</color>
+    <!--登录-->
+    <color name="color_C2C2C2">#C2C2C2</color>
+    <color name="color_C5C5C5">#C5C5C5</color>
+
+    <!--分类-->
+    <color name="color_F7F7F7">#F7F7F7</color>
+    <color name="color_FEF5F1">#FEF5F1</color>
+    <!--购物车-->
+    <color name="color_737373">#737373</color>
+
+</resources>

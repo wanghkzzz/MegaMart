@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingTop="10dp"
+        android:paddingRight="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_home_common_goods_list_item_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+                <ImageView
+                    android:id="@+id/iv_goods_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_placeholder" />
+                <ImageView
+                    android:id="@+id/iv_item_shadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    android:background="@drawable/shape_collection_item_shadow_bg"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="7dp"
+                android:paddingRight="9dp"
+                android:text="@string/example_goods"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="17dp">
+
+                <TextView
+                    android:id="@+id/tv_goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="7dp"
+                    android:text="@string/goods_price"
+                    android:textColor="@color/color_EC4113"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_sell_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_goods_price"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="7dp"
+                    android:text="@string/sell_count"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_add_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/icon_tianjia" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_holder_space"
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_select_no"
+        android:layout_alignParentRight="true"
+        android:padding="15dp"/>
+
+</RelativeLayout>

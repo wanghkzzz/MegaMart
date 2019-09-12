@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.hss01248:DialogUtil:2.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d6aa4c724639aac5c49ad005602e5a5b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d6aa4c724639aac5c49ad005602e5a5b/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.hss01248/DialogUtil/2.0.1/46674218ab530440c6e62dd584d7a860f1ce5c35/DialogUtil-2.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

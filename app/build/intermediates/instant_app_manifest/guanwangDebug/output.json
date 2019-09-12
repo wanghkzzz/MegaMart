@@ -1,0 +1,1 @@
+[{"outputType":{"type":"INSTANT_APP_MANIFEST"},"apkData":{"type":"MAIN","splits":[],"versionCode":5,"versionName":"1.0.5","enabled":true,"outputFile":"guanwang_v1.0.5_20190907.apk","fullName":"guanwangDebug","baseName":"guanwang-debug"},"path":"AndroidManifest.xml","properties":{"packageId":"com.benben.megamart","split":"","minSdkVersion":"19"}}]

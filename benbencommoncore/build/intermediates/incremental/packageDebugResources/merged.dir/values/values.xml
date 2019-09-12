@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="assist_text_color">#999999</color>
+    <color name="assist_text_color_2">#888888</color>
+    <color name="assist_text_color_3">#333333</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="color_111111">#111111</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_737373">#737373</color>
+    <color name="color_9660F8">#9660F8</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_B55EF5">#B55EF5</color>
+    <color name="color_CCCCCC">#CCCCCC</color>
+    <color name="color_EDEDED">#EDEDED</color>
+    <color name="color_EEEEEE">#EEEEEE</color>
+    <color name="color_F3F3F3">#F3F3F3</color>
+    <color name="color_F45552">#F45552</color>
+    <color name="color_F5F5F5">#F5F5F5</color>
+    <color name="color_FE4918">#FE4918</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_activity_default_bg">#ffffff</color>
+    <color name="color_pop_default_bg">#66000000</color>
+    <color name="color_status_active_b55ef5">#B55EF5</color>
+    <color name="color_text_black_33">#333333</color>
+    <color name="color_text_black_66">#666666</color>
+    <color name="color_text_gray_99">#999999</color>
+    <color name="color_title_bar_bg">#ffffff</color>
+    <color name="half_transparent_bg">#9a000000</color>
+    <color name="line_gray">#F3F3F3</color>
+    <color name="main_text_color">#444444</color>
+    <color name="text_white">#ffffff</color>
+    <color name="title_bar_text_color">#000</color>
+    <color name="title_center_text_color">#333333</color>
+    <color name="transparent">#00000000</color>
+    <color name="white_bg">#ffffff</color>
+    <item name="fab_label" type="id"/>
+    <item name="statusbarutil_fake_status_bar_view" type="id"/>
+    <item name="statusbarutil_translucent_view" type="id"/>
+    <string name="app_name">BenBenCommonCore</string>
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="CustomPopWindowStyle">
+        <item name="android:windowEnterAnimation">@anim/popwindow_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_anim_out</item>
+    </style>
+    <style name="Widget.MaterialProgressBar.ProgressBar.Horizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">4dp</item>
+        <item name="android:maxHeight">4dp</item>
+    </style>
+    <style name="actionBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@android:color/primary_text_light</item>
+        <item name="actionBarSize">44dp</item>
+    </style>
+    <style name="customTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionBarTheme">@style/actionBarTheme</item>
+        <item name="colorPrimary">@color/color_title_bar_bg</item>
+        <item name="actionBarSize">44dp</item>
+        <item name="colorPrimaryDark">@color/color_title_bar_bg</item>
+    </style>
+    <style name="red_packet_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <declare-styleable name="BGABadgeView">
+        <!-- 徽章背景色 -->
+        <attr format="reference|color" name="badge_bgColor"/>
+        <!-- 徽章文本的颜色 -->
+        <attr format="reference|color" name="badge_textColor"/>
+        <!-- 徽章文本字体大小 -->
+        <attr format="reference|dimension" name="badge_textSize"/>
+        <!-- 徽章背景与宿主控件上下边缘间距离 -->
+        <attr format="reference|dimension" name="badge_verticalMargin"/>
+        <!-- 徽章背景与宿主控件左右边缘间距离 -->
+        <attr format="reference|dimension" name="badge_horizontalMargin"/>
+        <!-- 徽章文本边缘与徽章背景边缘间的距离 -->
+        <attr format="reference|dimension" name="badge_padding"/>
+        <!-- 徽章在宿主控件中的位置 -->
+        <attr format="enum" name="badge_gravity">
+            <enum name="rightTop" value="0"/>
+            <enum name="rightCenter" value="1"/>
+            <enum name="rightBottom" value="2"/>
+        </attr>
+        <!-- 是否可以拖拽删除徽章 -->
+        <attr format="boolean" name="badge_dragable"/>
+        <!-- 拖拽徽章超出轨迹范围后，再次放回到轨迹范围时，是否恢复轨迹 -->
+        <attr format="boolean" name="badge_isResumeTravel"/>
+        <!-- 徽章描边宽度 -->
+        <attr format="reference|dimension" name="badge_borderWidth"/>
+        <!-- 徽章描边颜色 -->
+        <attr format="reference|color" name="badge_borderColor"/>
+        <!-- 触发开始拖拽徽章事件的扩展触摸距离 -->
+        <attr format="reference|dimension" name="badge_dragExtra"/>
+    </declare-styleable>
+    <declare-styleable name="CustomItemBar">
+        <attr format="reference|integer" name="background_color"/>
+        <attr format="boolean" name="left_layout_visible"/>
+        <attr format="boolean" name="custom_btn_visible"/>
+        <attr format="boolean" name="right_image_visible"/>
+        <attr format="string" name="title_text"/>
+        <attr format="color" name="title_text_color"/>
+        <attr format="string" name="right_tv_text"/>
+        <attr format="color" name="right_tv_text_color"/>
+        <attr format="reference|integer" name="left_image_drawable"/>
+        <attr format="reference|integer" name="right_image_drawable"/>
+    </declare-styleable>
+    <declare-styleable name="RoundImageView">
+        <attr format="integer|reference" name="borderRadius"/>
+        <attr format="integer|reference" name="type"/>
+    </declare-styleable>
+    <declare-styleable name="TimeBtn">
+        <attr format="integer" name="textColorNotFocused"/>
+        <attr format="integer" name="textColorFocused"/>
+        <attr format="integer" name="textColorPressed"/>
+        <attr format="integer" name="time"/>
+    </declare-styleable>
+</resources>

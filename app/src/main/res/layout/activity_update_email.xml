@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <EditText
+        android:id="@+id/edt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/login_yx"
+        android:drawablePadding="10dp"
+        android:hint="@string/enter_the_email"
+        android:padding="15dp"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="@color/color_333333"
+        android:textColorHint="@color/color_CCCCCC"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:text="@string/get_verification_code"
+            android:textColor="@color/theme"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edt_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_code"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/login_yzm"
+            android:drawablePadding="10dp"
+            android:hint="@string/enter_the_verification_code"
+            android:inputType="number"
+            android:padding="15dp"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_CCCCCC"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="15dp"
+        android:background="@mipmap/login_btn"
+        android:text="@string/positive"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

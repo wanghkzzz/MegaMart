@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/stf_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_FFFFFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_F5F5F5"
+                    android:paddingBottom="10dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/color_FFFFFF"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="19dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"
+                            android:src="@mipmap/icon_dingwei" />
+
+                        <EditText
+                            android:id="@+id/edt_post_code"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="@string/enter_the_four_post_code"
+                            android:inputType="number"
+                            android:maxEms="4"
+                            android:paddingLeft="11dp"
+                            android:textColor="@color/color_333333"
+                            android:textColorHint="@color/color_CCCCCC"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_positive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingRight="17dp"
+                            android:text="@string/positive"
+                            android:textColor="@color/color_333333"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rlv_post_code_address_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_FFFFFF">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="17dp"
+                    android:background="@color/color_F5F5F5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="18dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/current_location"
+                        android:textColor="@color/color_999999"
+                        android:textSize="14sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="12dp">
+
+                        <EditText
+                            android:id="@+id/edt_location"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_get_address_edit_bg"
+                            android:clickable="false"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="- -"
+                            android:paddingLeft="11dp"
+                            android:textColor="@color/color_999999"
+                            android:textColorHint="@color/color_999999"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btn_get_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/shape_get_address_btn_bg"
+                            android:text="@string/get_location"
+                            android:textColor="@color/color_FFFFFF"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/often_used_address"
+                        android:textColor="@color/color_999999"
+                        android:textSize="14sp" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rlv_address_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

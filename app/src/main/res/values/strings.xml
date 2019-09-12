@@ -1,0 +1,456 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" tools:ignore="MissingTranslation">
+    <string name="app_name">MegaMart</string>
+    <!--MainActivity-->
+    <string name="main_home">首页</string>
+    <string name="main_category">分类</string>
+    <string name="main_discount">优惠</string>
+    <string name="main_shop_cart">购物车</string>
+    <string name="main_mine">我的</string>
+    <string name="no_data">暂时无数据~</string>
+    <string name="skip">跳过</string>
+    <!--首页-->
+    <string name="example_location">墨尔本</string>
+    <string name="enter_the_search_content">请输入搜索内容</string>
+    <string name="sell_well">热销</string>
+    <string name="all_goods">全部</string>
+    <string name="total_goods">全部商品</string>
+    <string name="snacks">休闲食品</string>
+    <string name="convenient_meal">方便饭</string>
+    <string name="drinks_oatmeal">饮料&amp;麦片</string>
+    <string name="grain_food">粮油副食</string>
+    <string name="drying_order_discount">晒单优惠</string>
+    <string name="recommend_friend">推荐好友</string>
+    <string name="coupon_center">领券中心</string>
+    <string name="still_more">更多</string>
+    <string name="sell_well_products">热销主题</string>
+    <string name="new_products">新品速递</string>
+    <string name="recommend_products">推荐商品</string>
+    <string name="discount_products">特价商品</string>
+    <string name="example_goods">悉尼塔旋转餐厅自助晚餐(可俯瞰悉尼全景)</string>
+    <string name="view_details">查看详情</string>
+    <string name="active_details">活动详情</string>
+    <string name="goods_price">＄%1$s</string>
+    <string name="sell_count">月销量%1$d件</string>
+    <!--登录-->
+    <string name="enter_the_phone_number">请输入手机号</string>
+    <string name="enter_the_password">请输入密码(6~12)位</string>
+    <string name="login">登录</string>
+    <string name="register_account">注册账号</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="quick_login">快捷登录</string>
+    <string name="iphone_number_not_null">手机号不能为空！</string>
+    <string name="password_not_null">密码不能为空!</string>
+    <string name="user_not_exist_please_go_register">用户不存在,请先注册!</string>
+    <!--注册-->
+    <string name="register">注册</string>
+    <string name="enter_the_email">请输入电子邮箱</string>
+    <string name="enter_the_verification_code">请输入验证码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="enter_the_invitation_code">请输入邀请码(选填)</string>
+    <string name="click_registration_agreement">点击注册即默认同意</string>
+    <string name="user_registration_agreement">《用户注册协议》</string>
+    <string name="email_not_null">电子邮箱不能为空！</string>
+    <string name="verification_code_not_null">验证码不能为空！</string>
+    <string name="resend_verification_code">秒后可重新发送</string>
+
+    <!--找回密码-->
+    <string name="retrieve_password">找回密码</string>
+    <string name="enter_the_current_phone_number">请输入当前手机号</string>
+    <string name="confirm_new_password">请确认新密码</string>
+    <string name="confirm">提交</string>
+
+    <!--选择地址-->
+    <string name="choose_address">选择地址</string>
+    <string name="enter_the_four_post_code">请输入4位邮编</string>
+    <string name="positive">确定</string>
+    <string name="current_location">当前定位</string>
+    <string name="get_location">定位获取</string>
+    <string name="sydney">悉尼</string>
+    <string name="often_used_address">常用地址</string>
+
+    <!--消息-->
+    <string name="message">消息</string>
+    <string name="message_notice">消息公告</string>
+    <string name="platform_customer">平台客服</string>
+    <string name="notic_message">公告消息</string>
+    <string name="details">详情</string>
+
+    <!--分类-->
+    <string name="goods_name_or_key_words">商品名称/关键词</string>
+
+    <!--搜索-->
+    <string name="search">搜索</string>
+    <string name="hot_search">热门搜索</string>
+    <string name="history_search">历史搜索</string>
+    <string name="goods_name_not_null">你还没有输入要搜索的商品名称~</string>
+
+    <!--搜索的商品列表-->
+    <string name="synthetical">综合</string>
+    <string name="sales_volume">销量</string>
+    <string name="price">价格</string>
+
+    <!--筛选popupwindow-->
+
+    <string name="screen">筛选</string>
+    <string name="reset">重置</string>
+
+    <!--个人中心-->
+    <string name="mine_my_wallet">我的钱包</string>
+    <string name="mine_my_coupon">我的优惠券</string>
+    <string name="mine_my_invitation">我的邀请</string>
+    <string name="mine_my_collection">我的收藏</string>
+    <string name="mine_my_feedback">意见反馈</string>
+    <string name="mine_my_connection">联系我们</string>
+    <string name="mine_my_about">关于我们</string>
+
+    <string name="mine_my_order">我的订单</string>
+    <string name="mine_all_order">全部订单</string>
+    <!--订单部分-->
+    <string name="mine_order_all">全部</string>
+    <string name="mine_order_delivery">货到付款</string>
+    <string name="mine_order_paid">已付款</string>
+    <string name="mine_order_refund">退款/售后</string>
+    <string name="mine_order_complete">已完成</string>
+
+    <!--设置-->
+    <string name="setting">设置</string>
+    <string name="setting_update_pwd">修改密码</string>
+    <string name="setting_select_language">语言选择</string>
+    <string name="setting_delete_cache">清除缓存</string>
+    <string name="setting_now_version">当前版本</string>
+    <string name="setting_exit">退出登录</string>
+
+    <!--修改密码-->
+    <string name="password_update">修改密码</string>
+    <string name="password_input_now_phone">请输入当前手机号</string>
+    <string name="password_confirm_new_password">请确认新密码</string>
+    <string name="password_submit">提交</string>
+
+    <!--语言选择-->
+    <string name="language_select">语言选择</string>
+    <string name="language_chinese">简体中文</string>
+    <string name="language_english">English</string>
+    <string name="language_save">保存</string>
+
+    <!--个人资料-->
+    <string name="person_data">个人资料</string>
+    <string name="person_save">保存</string>
+    <string name="person_editor">编辑</string>
+    <string name="person_header">头像</string>
+    <string name="person_exchange_header">更换\n头像</string>
+    <string name="person_id">ID</string>
+    <string name="person_name">昵称</string>
+    <string name="person_sex">性别</string>
+    <string name="person_man">男</string>
+    <string name="person_woman">女</string>
+    <string name="person_receiver_address">收货地址</string>
+    <string name="person_email">邮箱</string>
+    <string name="person_phone">手机号</string>
+
+    <!--绑定账号，手机号和邮箱-->
+    <string name="binding_phone">绑定手机</string>
+    <string name="binding_phone_number">绑定手机号</string>
+    <string name="binding_exchange_phone">更换绑定手机</string>
+    <string name="binding_email">更改绑定邮箱</string>
+    <string name="binding_email_number">绑定邮箱账号</string>
+    <string name="binding_exchange_email">更换绑定邮箱</string>
+
+
+    <!--我的钱包-->
+    <string name="wallet_my">我的钱包</string>
+    <string name="wallet_account_balance">账户余额（澳元）</string>
+    <string name="wallet_recharge">充值</string>
+    <string name="wallet_record">我的账本</string>
+    <!--充值部分-->
+    <string name="recharge_money">充值金额</string>
+    <string name="recharge_input_money">请输入充值金额</string>
+    <string name="recharge_explain">注：最低充值为1澳元，请输入1澳元的倍数</string>
+    <string name="recharge_pay_way">支付方式</string>
+    <string name="recharge_alipay">支付宝</string>
+    <string name="recharge_wxpay">微信</string>
+    <string name="recharge_pp">PayPal</string>
+    <string name="select_pay_way">请先选择支付方式</string>
+    <!--我的账本部分-->
+    <string name="account_month_select">月份选择</string>
+    <string name="account_year">年</string>
+    <string name="account_money">月</string>
+    <string name="account_total_consume">本月累计消费：＄</string>
+
+    <!--我的邀请码-->
+    <string name="invitation_my">我的邀请</string>
+    <string name="invitation_my_friend">我邀请的好友</string>
+    <string name="invitation_my_code">我的邀请码</string>
+    <string name="invitation_friend">邀请好友</string>
+    <string name="invitation_my_exclusive_code">我的专属邀请码：</string>
+    <string name="invitation_copy">点击复制</string>
+    <string name="invitation_qr_download">二维码下载</string>
+    <string name="invitation_share_url">分享链接</string>
+    <string name="invitation_input_code">填写邀请码</string>
+    <string name="invitation_input_content">输入9位邀请码</string>
+    <string name="invitation_confirm">确定</string>
+    <string name="invitation_no_complete">未完成首次购买</string>
+    <string name="invitation_complete">首次购买完成</string>
+
+    <!--我的优惠券-->
+    <string name="coupon_my">代金券</string>
+    <string name="coupon_no_use">未使用</string>
+    <string name="coupon_used">已使用</string>
+    <string name="coupon_cash">已失效</string>
+    <string name="coupon_go_receiver">去领劵</string>
+
+    <!--意见反馈-->
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_input_title">请输入您的意见或者建议</string>
+    <string name="feedback_input_content">请输入…</string>
+    <string name="feedback_submit">提交</string>
+
+
+    <!--商品详情-->
+    <string name="goods_details">商品详情</string>
+    <string name="purchase_instructions">购买须知</string>
+    <string name="other_specifications">其他规格</string>
+    <string name="mm_video">视频</string>
+    <string name="mm_image">图片</string>
+    <string name="guess_you_like">猜你喜欢</string>
+    <string name="custom_services">联系客服</string>
+    <string name="collection_count">%1$d人</string>
+    <!--购物车-->
+    <string name="shop_cart_settlement">结算</string>
+    <string name="shop_cart_total_money">合计:</string>
+    <string name="shop_cart_delete">删除</string>
+    <string name="shop_cart_positive">确定</string>
+    <string name="shop_cart_cancel">取消</string>
+    <string name="shop_cart_select_all">全选</string>
+    <string name="shop_cart_complete">完成</string>
+    <string name="do_you_confirm_deletion">您是否确认删除?</string>
+    <string name="no_choose_goods">你还没有选择商品哦</string>
+    <!--广告详情-->
+
+    <string name="free_of_freight">买满免运费</string>
+    <!--优惠-->
+    <string name="discount_zone">优惠专区</string>
+    <string name="compose_discount">组合优惠</string>
+    <string name="compose_goods">组合商品</string>
+    <string name="special_discount">特价优惠</string>
+    <string name="rebate_discount">折扣优惠</string>
+    <string name="special_price">特价</string>
+    <string name="add_shop_cart">加入购物车</string>
+    <string name="compose_discount_price">组合优惠价:</string>
+    <string name="save_money"> (省%1$s)</string>
+    <string name="discount_number">%1$s折</string>
+    <string name="purchase">购买</string>
+
+    <!--提交订单页面-->
+    <string name="payable">应付款:</string>
+    <string name="submit_order">提交订单</string>
+    <string name="freight">运费</string>
+    <string name="delivery_time">送货时间</string>
+    <string name="choose_delivery_time">选择送货时间</string>
+    <string name="coupon">优惠券</string>
+    <string name="choose_coupon">选择优惠券</string>
+    <string name="goods_total">共%1$d件商品&#160;&#160;应付款：</string>
+    <string name="payment_method">支付方式</string>
+    <string name="balance">余额</string>
+    <string name="alipy">支付宝</string>
+    <string name="wechat">微信</string>
+    <string name="paypal">PayPal</string>
+    <string name="cash_on_delivery">货到付款</string>
+    <string name="stripe">Stripe</string>
+    <string name="balance_money">(＄%1$s)</string>
+    <string name="balance_payment">余额支付</string>
+    <string name="affirm">确认</string>
+    <string name="zip_code">邮编:%1$s</string>
+    <string name="blank_space">&#160;&#160;</string>
+    <string name="aToz">abcdefghijklmnopqrstuvwxyz</string>
+    <string name="zeroTonine">1234567890</string>
+    <string name="no_select_delivery_time">没有可选择的送货时间</string>
+    <string name="no_usable_coupon">没有可使用的优惠券</string>
+    <string name="no_choose_address">你还没有选择收货地址</string>
+    <string name="no_choose_delivery_time">你还没有选择送货时间</string>
+
+    <!--支付成功页面-->
+    <string name="payment_successful">支付成功</string>
+    <string name="payment_failure">支付失败</string>
+    <string name="payment_cancel">支付取消</string>
+    <string name="order_payment_successful">订单支付成功</string>
+    <string name="payment_amount">支付金额:</string>
+    <string name="payment_method_parameter">支付方式:</string>
+    <string name="check_order">查看订单</string>
+    <string name="back_to_home">返回首页</string>
+
+    <!--功能开发中 弹窗-->
+    <string name="feature_development">功能开发中,敬请期待！</string>
+    <string name="got_it">知道了</string>
+
+    <!--订单模块-->
+    <string name="order_title">我的订单</string>
+    <string name="order_all">全部订单</string>
+    <string name="order_cash">货到付款</string>
+    <string name="order_payed">已付款</string>
+    <string name="order_callback">退货/售后</string>
+    <string name="order_number">订单编号：</string>
+    <string name="order_goods_num">共计%1$d件商品</string>
+    <string name="order_total_price">合计</string>
+    <string name="order_callbacking">售后处理中</string>
+    <string name="order_callbacked">售后已完成</string>
+    <string name="order_watch_detail">查看详情</string>
+
+    <!--订单详情-->
+    <string name="order_detail">订单详情</string>
+    <string name="order_goods_total">商品合计</string>
+    <string name="order_fright">运费</string>
+    <string name="order_discount">优惠券</string>
+    <string name="order_real_pay_price">实际支付</string>
+    <string name="order_send_time">送货时间</string>
+    <string name="order_pay_way">支付方式</string>
+    <string name="order_apply_callback">申请售后</string>
+    <string name="order_replace">换货</string>
+    <string name="order_replace_reason">换货原因</string>
+
+
+    <!--添加地址-->
+    <string name="address_manager">地址管理</string>
+    <string name="address_add">添加地址</string>
+    <string name="address_save">保存</string>
+    <string name="address_receiver_name">收货人</string>
+    <string name="address_phone">联系电话</string>
+    <string name="address_detail">详细地址</string>
+    <string name="address_zip_code">邮编</string>
+    <string name="address_area">所在区</string>
+    <string name="address_state">所在州</string>
+    <string name="address_select">请选择</string>
+    <string name="address_input_detail">请输入您的详细地址</string>
+    <string name="address_default">设为默认地址</string>
+    <string name="address_defaulted">默认地址</string>
+    <string name="address_editor">编辑地址</string>
+
+    <!--我的收藏-->
+    <string name="collection_title">我的收藏</string>
+    <string name="collection_price">月销量%1$s件</string>
+    <string name="collection_all_select">全选</string>
+    <string name="collection_no_select">全不选</string>
+    <string name="pwd_no_same">两次密码不一致</string>
+
+    <!--选择区或者州-->
+    <string name="select_area">选择区</string>
+    <string name="select_state">选择州</string>
+    <string name="select_search_hint">请输入邮编或者区名</string>
+    <string name="select_now_area">所在区</string>
+    <string name="select_now_state">所在州</string>
+    <string name="select_zip_code">邮编</string>
+
+    <string name="about">关于我们</string>
+    <!--联系我们-->
+    <string name="connection_mine">联系我们</string>
+    <string name="connection_phone">7x24小时客服热线:</string>
+    <string name="connection_qr_code">扫码添加微信</string>
+    <string name="connection_qq">客服QQ:</string>
+
+
+    <string name="bind">绑定</string>
+
+
+    <!--supplement-->
+    <string name="server_exception">服务器异常</string>
+    <string name="apply_after_sale">申请售后</string>
+    <string name="revoke_apply">撤销申请</string>
+    <string name="get_data_failure">获取数据失败！</string>
+    <string name="binding_successful">绑定成功！</string>
+    <string name="please_authorize">请先授权！</string>
+    <string name="authorization_completed">授权完成！</string>
+    <string name="location_permission">地理位置权限</string>
+    <string name="need_current_location">需要获取当前地理位置</string>
+    <string name="full_coupon">满减券</string>
+    <string name="valid_until">有效期至:%1$s</string>
+    <string name="full_less">满%1$s减%2$s</string>
+    <string name="please_login_first">您还没有登录，请先登录！</string>
+    <string name="wait_to_paid">待支付</string>
+    <string name="apply_saling">申请售后中</string>
+    <string name="apply_sale_completed">售后完成</string>
+    <string name="wait_to_delivery">待配送</string>
+    <string name="delivering">配送中</string>
+    <string name="delivery_completed">配送完成</string>
+    <string name="successful_copy">复制成功！</string>
+    <string name="invite_friends">邀请好友</string>
+    <string name="input_invitation_code">请输入邀请码</string>
+    <string name="invitation_success">邀请成功！</string>
+    <string name="share_success">分享成功！</string>
+    <string name="share_fail">分享失败！</string>
+    <string name="share_cancel">取消分享！</string>
+    <string name="please_enter_consignee">请输入收货人</string>
+    <string name="please_enter_phone">请输入联系电话</string>
+    <string name="please_enter_address">请输入详细地址</string>
+    <string name="please_enter_house_number">请输入门牌号</string>
+    <string name="please_enter_postal_code">请输入邮编</string>
+    <string name="please_select_district">请选择区</string>
+    <string name="please_select_state">请选择州</string>
+    <string name="please_enter_street_number">请输入街道号</string>
+    <string name="please_enter_street_name">请输入街名</string>
+    <string name="street_number">街道号 street number</string>
+    <string name="street_name">街名 street name</string>
+    <string name="house_number">门牌号 unit number</string>
+
+    <string name="please_enter_reason">请输入原因</string>
+    <string name="return_goods">退货</string>
+    <string name="other">其他</string>
+    <string name="binding_new_email">绑定新邮箱</string>
+    <string name="please_select_image">请选择图片</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="please_select_item_to_delete">请选择要删除的商品</string>
+    <string name="no_collection_yet">暂无收藏</string>
+    <string name="no_data_yet">暂无数据</string>
+    <string name="paid">已支付</string>
+    <string name="completed">已完成</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="unknown">未知</string>
+    <string name="please_select_sex">请选择性别</string>
+    <string name="please_select_avatar">请选择头像</string>
+    <string name="please_enter_nickname">请输入昵称</string>
+    <string name="cleared_cache">已清理缓存</string>
+    <string name="postal_code_not_null">邮编不能为空</string>
+    <string name="user_register_agreement">用户注册协议</string>
+    <string name="photo_saving_please_wait">图片正在保存中，请稍等…</string>
+    <string name="save_photo">保存图片</string>
+    <string name="save_photo_success">图片保存成功！</string>
+    <string name="save_photo_fail">图片保存失败！</string>
+    <string name="tips">温馨提示</string>
+    <string name="seconds">秒</string>
+    <string name="please_enter_content_custom_service">请确认输入内容已与客服协商好</string>
+    <string name="click_to_enter">点击进入</string>
+    <string name="more_special_offers">更多精选优惠</string>
+    <string name="password_length">密码的长度应为6~12个字符</string>
+    <string name="select_shipping_address">选择收货地址</string>
+    <string name="select_delivery_time">选择送货时间</string>
+    <string name="not_logged_in">未登录</string>
+    <string name="yuan">元</string>
+    <string name="use_immediately">立即使用</string>
+    <string name="total">共计</string>
+    <string name="item_goods_total">件商品\t\t合计</string>
+    <string name="get_it_right_now">立\n即\n领\n取</string>
+    <string name="company">公司</string>
+    <string name="place_of_origin">产地</string>
+    <string name="share">分享</string>
+    <string name="edit_sharing_content">编辑分享内容</string>
+    <string name="follow_the_official_Weibo">关注官方微博</string>
+    <string name="login_success">登录成功！</string>
+    <string name="press_again_exit_app">再按一次退出程序</string>
+    <string name="login_failed">登录失败,请重试！</string>
+    <string name="message_type_image">[图片]</string>
+    <string name="message_type_video">[视频]</string>
+    <string name="message_type_audio">[音频]</string>
+    <string name="message_type_file">[文件]</string>
+    <string name="message_type_location">[位置]</string>
+    <string name="message_type_unknown">[未知]</string>
+    <string name="pwd_cant_include_blank">密码不能包含空格字符</string>
+    <string name="goods_invalid">(该商品已失效)</string>
+    <string name="have_invalid_goods">包含失效商品，无法结算</string>
+    <string name="received">已\n领\n取</string>
+    <string name="recharge">充值</string>
+    <string name="consumption">消费</string>
+    <string name="refunds">退款</string>
+    <string name="card_not_support_or_invalid">该卡不支持或无效</string>
+    <string name="stripe_pay">Stripe支付</string>
+    <string name="friend_share_surprise_for_you">好友给你分享了一个惊喜</string>
+</resources>

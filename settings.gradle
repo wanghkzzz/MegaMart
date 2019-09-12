@@ -1,0 +1,1 @@
+include ':app', ':benbencommoncore', ':picture_library', ':ucrop', ':updateapputils',':easemob_lib'

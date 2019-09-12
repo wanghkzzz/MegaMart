@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white_bg"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlyt_cart_reduce"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:background="@drawable/btn_shopping_cart_product_num_reduce">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/icon_jianshao" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_cart_num_edit"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/color_333333"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_cart_add"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:background="@drawable/btn_shopping_cart_product_num_reduce">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/icon_zengjia" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+    <com.benben.commoncore.widget.TopProgressWebView
+        android:id="@+id/wv_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.benben.commoncore.widget.TopProgressWebView>
+</LinearLayout>
